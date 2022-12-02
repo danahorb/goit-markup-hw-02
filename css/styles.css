@@ -1,115 +1,176 @@
 /* All colors */
+/* 
+потрійні назви класів прибрати 
+додати hover і focus 
+класи секцій і заголовків однаковий зробити
+перепідписати класи з дотримуванням наслідування 
+*/
+
+/*  */
+
+/* другорядний колір фону #F5F4FA */
+
 
 :root {
-    --color-text-primary: #212121;
-    --color-text-secondary: #757575;
-    --color-logo-web: #2196F3;
-    --color-logo-studio-header: #000000;
-    --color-background-header: #FFFFFF;
-    --color-background-main: #F5F5F5;
-    --color-background-hero: #2F303A;
-    --color-hero-title: #FFFFFF;
-    --color-text-action: #FFFFFF;
-    --color-background-action: #2196F3;
-    --color-background-team: #F5F4FA;
-    --color-background-footer: #2F303A;
-    --color-logo-studio-footer: #FFFFFF;
-    --color-text-address: #FFFFFF;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --accent-bg-color: #2F303A;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --secondary-bg-color: #F5F4FA;
 }
 
 /* Body */
 
-body {
-    color: var(--color-text-primary);
+.page {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
 }
 
 /* Header */
 
-.header {
-    background-color: var(--color-background-header);
+/* Logo */ 
+
+.logo {
+    text-decoration: none;
+    color: var(--accent-color);
 }
 
+/* Logo studio element header */
 
-/* Logo */
-
-.logo-web {
-    color: var(--color-logo-web);
+.logo .studio-el.header {
+    --primary-black-color: #000000;
+    color: var(--primary-black-color);
 }
 
-.logo-studio-header {
-    color: var(--color-logo-studio-header);
+/* Site nav */
+
+.site-nav .link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
 }
 
-/* Header Links */
-
-.header-link {
-    color: var(--color-text-primary);
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 
-.header-contact-link {
-    color: var(--color-text-secondary);
+/* Contact-nav */
+
+.contact-nav .link {
+    text-decoration: none;
+    color: var(--primary-text-color);
 }
 
-/* Main */
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-color);
+}
 
-.main {
-    background-color: var(--color-background-main);
+.list {
+    list-style: none;
+}
+
+/* Styles for index.html */
+
+/* Main contant */
+
+/* Secttions */
+
+.section-title {
+    color: var(--secondary-text-color);
 }
 
 /* Hero Section */
 
-.hero-section {
-    background-color: var(--color-background-hero);
+.hero {
+    background-color: var(--accent-bg-color);
 }
 
 .hero-title {
-    color: var(--color-hero-title);
+    color: var(--primary-white-color);
 }
 
 .hero-button {
-    color: var(--color-text-action);
-    background-color: var(--color-background-action);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
 }
 
 /* Features Section */
 
-.features-title {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-.features-content {
-    color: var(--color-text-secondary);
+.features .title {
+    color: var(--secondary-text-color);
 }
 
-/* Our DOs Section */
+/* Work Section */
 
-.dos-box {
-    list-style-type: none;
+
+
+/* Team Section */
+
+.team {
+    background-color: var(--secondary-bg-color);
 }
 
-.team-section {
-    background-color: var(--color-background-team);
-}
-
-.team-member{
-    list-style-type: none;
-}
-.team-member-position {
-    color: var(--color-text-secondary);
+.team-members .title {
+    color: var(--secondary-text-color);
 }
 
 /* Footer */
 
-.footer {
-    background-color: var(--color-background-footer);
+.page-footer {
+    background-color: var(--accent-bg-color);
 }
-.logo-studio-footer {
-    color: var(--color-logo-studio-footer);
+
+/* Logo studio element footer */
+
+.logo .studio-el.footer {
+    color: var(--primary-white-color);
 }
-.footer-address-list {
-    list-style-type: none;
+
+.address {
+    font-style: normal;
 }
-.footer-address-link {
-    color: var(--color-text-address);
+
+.address-footer .map {
+    text-decoration: none;
+    color: var(--primary-white-color);
 }
+
+.address-footer .map:hover,
+.address-footer .map:focus {
+    color: var(--accent-color);
+}
+
+.address-footer .contact {
+    text-decoration: none;
+    color: var(--footer-text-color);
+}
+
+.address-footer .contact:hover,
+.address-footer .contact:focus {
+    color: var(--accent-color);
+}
+
+
+/* Styles for portfolio.html */
+
 
