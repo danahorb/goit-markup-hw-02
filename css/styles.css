@@ -1,20 +1,11 @@
 /* All colors */
-/* 
-потрійні назви класів прибрати 
-додати hover і focus 
-класи секцій і заголовків однаковий зробити
-перепідписати класи з дотримуванням наслідування 
-*/
 
-/*  */
-
-/* другорядний колір фону #F5F4FA */
-
-
+/* #188CE8 hero button hover focus */
 :root {
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
+    --active-color: #188CE8;
     --primary-white-color: #FFFFFF;
     --accent-bg-color: #2F303A;
     --footer-text-color: rgba(255, 255, 255, 0.6);
@@ -95,15 +86,20 @@
     color: var(--primary-white-color);
 }
 
-.hero-button {
+.button {
+    cursor: pointer;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--active-color);
 }
 
 /* Features Section */
 
-.visually-hidden {
+.section-title.visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -173,4 +169,23 @@
 
 /* Styles for portfolio.html */
 
+/* Section Portfolio*/
 
+/* Filter buttons */
+
+.filters .button {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.filters .button:hover,
+.filters .button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Projects */
+
+.projects .title {
+    color: var(--secondary-text-color);
+}
