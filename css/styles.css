@@ -51,13 +51,8 @@
     text-decoration: none;
 }
 
-/* .link:hover,
-.link:focus {
-    color: var(--accent-color);
-} */
-
 .site-nav .link,
-.contact-nav .link {
+.contact-header .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -198,7 +193,7 @@
     background-color: var(--accent-bg-color);
 }
 
-/* Logo studio element footer */
+/* Logo 'Studio' element footer */
 
 .logo .studio-el.footer {
     color: var(--primary-white-color);
@@ -230,7 +225,7 @@
 
 /* Styles for portfolio.html */
 
-/* Section Portfolio*/
+/* Section Portfolio */
 
 /* Filter buttons */
 
