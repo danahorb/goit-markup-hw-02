@@ -34,7 +34,7 @@
     line-height: 1.19;
 }
 
-/* Logo studio element header */
+/* Logo 'Studio' element header */
 
 .logo .studio-el.header {
     --primary-black-color: #000000;
@@ -42,6 +42,19 @@
 }
 
 /* Site nav */
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* .link:hover,
+.link:focus {
+    color: var(--accent-color);
+} */
 
 .site-nav .link,
 .contact-nav .link {
@@ -52,37 +65,30 @@
 }
 
 .site-nav .link {
-    text-decoration: none;
     color: var(--secondary-text-color);
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
 }
 
 .site-nav .link.current {
     color: var(--accent-color);
 }
 
-/* Contact-nav */
+/* Contact-header */
 
-.contact-nav .link {
-    text-decoration: none;
+.contact-header .link {
     color: var(--primary-text-color);
 }
 
-.contact-nav .link:hover,
-.contact-nav .link:focus {
+/* Focus, Hover */
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-header .link:hover,
+.contact-header .link:focus {
     color: var(--accent-color);
 }
 
-.list {
-    list-style: none;
-}
 
 /* Styles for index.html */
-
-/* Main content */
 
 /* Secttions */
 
@@ -204,21 +210,18 @@
     line-height: 1.71;
 }
 
-.address .map {
-    text-decoration: none;
+.address .link {
     color: var(--primary-white-color);
 }
 
-.address .map:hover,
-.address .map:focus {
-    color: var(--accent-color);
-}
 
 .address .contact {
     text-decoration: none;
     color: var(--footer-text-color);
 }
 
+.address .link:hover,
+.address .link:focus,
 .address .contact:hover,
 .address .contact:focus {
     color: var(--accent-color);
@@ -234,6 +237,7 @@
 .filters .button {
     color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -259,6 +263,7 @@
 }
 
 .projects .content {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
