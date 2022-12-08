@@ -36,7 +36,7 @@
 
 /* Logo 'Studio' element header */
 
-.logo .studio-el.header {
+.logo-header {
     --primary-black-color: #000000;
     color: var(--primary-black-color);
 }
@@ -47,38 +47,36 @@
     list-style: none;
 }
 
-.link {
-    text-decoration: none;
-}
 
-.site-nav .link,
-.contact-header .link {
+.nav-link,
+.contact-header {
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.site-nav .link {
+.nav-link {
     color: var(--secondary-text-color);
 }
 
-.site-nav .link.current {
+.nav-link.current {
     color: var(--accent-color);
 }
 
 /* Contact-header */
 
-.contact-header .link {
+.contact-header {
     color: var(--primary-text-color);
 }
 
 /* Focus, Hover */
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contact-header .link:hover,
-.contact-header .link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.contact-header:hover,
+.contact-header:focus {
     color: var(--accent-color);
 }
 
@@ -106,18 +104,18 @@
 
 .button {
     cursor: pointer;
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-
     font-family: inherit;
 }
 
-.button:hover,
-.button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--active-color);
 }
 
-.hero .button {
+.hero-button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -135,7 +133,7 @@
     text-align: center;
 }
 
-.section-title.visually-hidden {
+.visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -148,7 +146,7 @@
     margin: -1px;
 }
 
-.features .title {
+.features-title {
     color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -156,7 +154,7 @@
     text-transform: uppercase;
 }
 
-.features .content {
+.features-content {
     font-size: 14px;
     line-height: 1.71;
 }
@@ -171,21 +169,22 @@
     background-color: var(--secondary-bg-color);
 }
 
-.team-members .title,
-.team-members .content {
+.team-member {
+    background-color: var(--primary-white-color);
+}
+
+.member-name,
+.position {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
 
-.team-members .title {
+.member-name {
     color: var(--secondary-text-color);
     font-weight: 500;
 }
 
-.member {
-    background-color: var(--primary-white-color);
-}
 
 /* Footer */
 
@@ -195,30 +194,31 @@
 
 /* Logo 'Studio' element footer */
 
-.logo .studio-el.footer {
+.logo-footer {
     color: var(--primary-white-color);
 }
 
-.address-footer {
+.studio-contacts {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }
 
-.address .link {
+.map-link {
+    text-decoration: none;
     color: var(--primary-white-color);
 }
 
 
-.address .contact {
+.contact-footer {
     text-decoration: none;
     color: var(--footer-text-color);
 }
 
-.address .link:hover,
-.address .link:focus,
-.address .contact:hover,
-.address .contact:focus {
+.map-link:hover,
+.map-link:focus,
+.contact-footer:hover,
+.contact-footer:focus {
     color: var(--accent-color);
 }
 
@@ -229,7 +229,7 @@
 
 /* Filter buttons */
 
-.filters .button {
+.filter-button {
     color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color);
 
@@ -240,15 +240,19 @@
     letter-spacing: 0.03em;
 }
 
-.filters .button:hover,
-.filters .button:focus {
+.filter-button:hover,
+.filter-button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
 /* Projects */
 
-.projects .title {
+.project-link {
+    text-decoration: none;
+}
+
+.project-title {
     color: var(--secondary-text-color);
 
     font-weight: 700;
@@ -257,7 +261,7 @@
     letter-spacing: 0.06em;
 }
 
-.projects .content {
+.project-content {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
